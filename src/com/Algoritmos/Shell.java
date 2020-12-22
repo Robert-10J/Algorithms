@@ -1,33 +1,31 @@
 package com.Algoritmos;
 public class Shell {
-
     public void shellShort(int [] arrayShell) {
-        int salto, i, j, k, aux;
-        salto = arrayShell.length / 2;
-        while (salto > 0) {
-            for (i = salto; i < arrayShell.length; i++) {
-                j = i - salto;
+        int jump, i, j, k, aux;
+        jump = arrayShell.length / 2;
+        while (jump > 0) {
+            for (i = jump; i < arrayShell.length; i++) {
+                j = i - jump;
                 while (j >= 0) {
-                    k = j + salto;
+                    k = j + jump;
                     if (arrayShell[j] <= arrayShell[k]) {
                         j = -1;
                     } else {
                         aux = arrayShell[j];
                         arrayShell[j] = arrayShell[k];
                         arrayShell[k] = aux;
-                        j -= salto;
+                        j -= jump;
                     }
                 }
             }
-
-            salto = salto / 2;
+            jump = jump / 2;
         }
         imprimir(arrayShell);
     }
 
     public void imprimir(int [] array) {
         for (int recorrer: array) {
-            System.out.print(recorrer + " ");
+            System.out.print(" [" + recorrer + "] " + " ");
         }
     }
 }

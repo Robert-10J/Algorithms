@@ -13,15 +13,15 @@ public class Main {
             try {
                 opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "Menu de opciones \n\n" +
-                                "1.- Algoritmo ShellShort \n" +
-                                "2.- Algoritmo Radix \n" +
+                                "1.- Algoritmo Radix \n" +
+                                "2.- Algoritmo ShellShort\n" +
                                 "3.- Salir \n\n"));
 
                 switch (opcion) {
                     case 1:
                         System.out.println();
                         for (int i = 0; i < arrayRadix.length; i++) {
-                            arrayRadix[i] = (int) (Math.random() * 50 + 5);
+                            arrayRadix[i] = (int) (Math.random() * 50 + 1);
                         }
                         System.out.println("Algoritmo de ordenamiento Radix: ");
                         System.out.print("Desordenado: ");
@@ -33,7 +33,7 @@ public class Main {
                     case 2:
                         System.out.println();
                         for (int i = 0; i < arrayShellShort.length; i++) {
-                            arrayShellShort[i] = (int) (Math.random() * 50 + 5);
+                            arrayShellShort[i] = (int) (Math.random() * 50 + 1);
                         }
                         System.out.println("Algoritmo de ordenamiento ShellShort");
                         System.out.print("Desordenado: ");
