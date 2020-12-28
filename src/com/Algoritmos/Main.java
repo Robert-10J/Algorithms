@@ -21,7 +21,7 @@ public class Main {
                     case 1:
                         System.out.println();
                         for (int i = 0; i < arrayRadix.length; i++) {
-                            arrayRadix[i] = (int) (Math.random() * 50 + 1);
+                            arrayRadix[i] = (int) (Math.random() * 100 + 1);
                         }
                         System.out.println("Algoritmo de ordenamiento Radix: ");
                         System.out.print("Desordenado: ");
@@ -33,7 +33,7 @@ public class Main {
                     case 2:
                         System.out.println();
                         for (int i = 0; i < arrayShellShort.length; i++) {
-                            arrayShellShort[i] = (int) (Math.random() * 50 + 1);
+                            arrayShellShort[i] = (int) (Math.random() * 100 + 1);
                         }
                         System.out.println("Algoritmo de ordenamiento ShellShort");
                         System.out.print("Desordenado: ");
